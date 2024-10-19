@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ERA V3 Session 2 - Assignment</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+    </style>
+</head>
+<body class="min-h-screen flex items-center justify-center">
+    <div class="bg-white rounded-lg shadow-2xl p-8 m-4 w-full max-w-3xl">
+        <h1 class="text-4xl font-bold mb-8 text-center text-purple-600">ERA V3 Session 2 - Assignment</h1>
+        
+        <div class="mb-8 p-6 bg-purple-100 rounded-lg shadow-inner">
+            <h2 class="text-2xl font-semibold mb-4 text-purple-800">Select an Animal</h2>
+            <div class="flex justify-around mb-4">
+                <label class="inline-flex items-center">
+                    <input type="checkbox" name="animal" value="cat" class="form-checkbox h-5 w-5 text-purple-600">
+                    <span class="ml-2 text-lg">Cat</span>
+                </label>
+                <label class="inline-flex items-center">
+                    <input type="checkbox" name="animal" value="dog" class="form-checkbox h-5 w-5 text-purple-600">
+                    <span class="ml-2 text-lg">Dog</span>
+                </label>
+                <label class="inline-flex items-center">
+                    <input type="checkbox" name="animal" value="elephant" class="form-checkbox h-5 w-5 text-purple-600">
+                    <span class="ml-2 text-lg">Elephant</span>
+                </label>
+            </div>
+            <img id="animalImage" src="" alt="Animal Image" class="mx-auto hidden max-w-full h-auto rounded-lg shadow-lg">
+        </div>
+
+        <div class="p-6 bg-purple-100 rounded-lg shadow-inner">
+            <h2 class="text-2xl font-semibold mb-4 text-purple-800">Upload a File</h2>
+            <input type="file" id="fileInput" class="mb-4 p-2 w-full border border-purple-300 rounded">
+            <div id="fileInfo" class="text-purple-800"></div>
+        </div>
+    </div>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
